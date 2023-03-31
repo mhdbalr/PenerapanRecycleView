@@ -1,5 +1,6 @@
 package com.example.penerapanrecycleview
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.GridLayout
@@ -32,6 +33,12 @@ class MainActivity : AppCompatActivity() {
         //val gl = GridLayout(this)
         binding.rvStudent.layoutManager = lm
         binding.rvStudent.adapter = adapterStudent
+
+        adapterStudent.onClick = {
+            val pindah = Intent(this, DetailStudentActivity::class.java)
+            pindah.putExtra("detail", it)
+            startActivity(pindah)
+        }
 
     }
 }

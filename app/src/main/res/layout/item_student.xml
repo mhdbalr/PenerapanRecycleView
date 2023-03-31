@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/detailCard"
         app:cardMaxElevation="5dp"
         app:cardCornerRadius="15dp"
         android:layout_margin="20dp"

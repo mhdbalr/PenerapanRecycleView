@@ -12,6 +12,9 @@
         android:theme="@style/Theme.PenerapanRecycleView"
         tools:targetApi="31">
         <activity
+            android:name=".DetailStudentActivity"
+            android:exported="false" />
+        <activity
             android:name=".StudentAdapter"
             android:exported="false" />
         <activity
